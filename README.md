@@ -91,8 +91,9 @@ To switch to Apache (httpd):
 Edit scripts/install_web_server.sh and set WEB_SERVER="httpd".
 Update WEB_USER="apache" in deploy_site.sh.
 ```
-
+```bash
 Author
 Ajima Fabian – Linux System Administrator / DevOps Enthusiast
 📧 Email: ajimafabian18@gmail.com
 💻 GitHub: https://github.com/Ajima-Fabian
+```
