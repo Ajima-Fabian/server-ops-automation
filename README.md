@@ -79,7 +79,7 @@ chmod +x scripts/*.sh
 bash scripts/deploy_web_server.sh
 ```
 
-# This will
+#### This will
 
 Install the web server (NGINX by default)
 
@@ -91,17 +91,17 @@ Setup SSL certificates using Certbot
 
 ---
 
-### View Logs
+## View Logs
 ```bash
 cat logs/deploy.log
 ```
 ---
 
-### Notes
+## Notes
 
 The default web server is NGINX.
 
-## To switch to Apache (httpd)
+### To switch to Apache (httpd)
 
 Edit scripts/install_web_server.sh and set WEB_SERVER="httpd".
 
@@ -109,7 +109,7 @@ Update WEB_USER="apache" in deploy_site.sh.
 
 ---
 
-### Author
+# Author
 
 Ajima Fabian – Linux System Administrator / DevOps Enthusiast
 
