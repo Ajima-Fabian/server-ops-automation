@@ -53,9 +53,11 @@ web-server-automation/
 ---
 
 ## Configuration File Example
-```bash
+
 `configs/sites.conf`
-example.com,/var/www/example myapp.local,/var/www/myapp
+```bash
+example.com,/var/www/example
+myapp.local,/var/www/myapp
 ```
 - Format: `domain,webroot`
 - Supports multiple entries
