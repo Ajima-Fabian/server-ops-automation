@@ -56,44 +56,53 @@ web-server-automation/
 ```bash
 `configs/sites.conf`
 example.com,/var/www/example myapp.local,/var/www/myapp
-
+```
 - Format: `domain,webroot`
 - Supports multiple entries
-```
+
 ---
 
 ## Usage
 
-Clone or copy the project
+### Clone or copy the project
 
 ```bash
 git clone https://github.com/Ajima-Fabian/server-ops-automation.git
 cd web-server-automation
 chmod +x scripts/*.sh
+```
 
-
-Run the Master Script
+### Run the Master Script
+```bash
 bash scripts/deploy_web_server.sh
-This will:
+```
+
+# This will:
 Install the web server (NGINX by default)
 Configure firewall rules
 Deploy websites from sites.conf
 Setup SSL certificates using Certbot
 
+---
 
-View Logs
+### View Logs
+```bash
 cat logs/deploy.log
+```
+---
 
-
-Notes
+### Notes
 The default web server is NGINX.
 To switch to Apache (httpd):
 Edit scripts/install_web_server.sh and set WEB_SERVER="httpd".
 Update WEB_USER="apache" in deploy_site.sh.
-```
-```bash
-Author
+
+---
+
+### Author
+
 Ajima Fabian – Linux System Administrator / DevOps Enthusiast
+
 📧 Email: ajimafabian18@gmail.com
+
 💻 GitHub: https://github.com/Ajima-Fabian
-```
