@@ -81,8 +81,11 @@ bash scripts/deploy_web_server.sh
 
 # This will:
 Install the web server (NGINX by default)
+
 Configure firewall rules
+
 Deploy websites from sites.conf
+
 Setup SSL certificates using Certbot
 
 ---
@@ -94,9 +97,13 @@ cat logs/deploy.log
 ---
 
 ### Notes
+
 The default web server is NGINX.
+
 To switch to Apache (httpd):
+
 Edit scripts/install_web_server.sh and set WEB_SERVER="httpd".
+
 Update WEB_USER="apache" in deploy_site.sh.
 
 ---
