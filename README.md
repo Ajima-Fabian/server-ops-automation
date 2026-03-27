@@ -24,6 +24,7 @@ This project demonstrates professional Linux administration, security best pract
 ---
 
 ## Project Structure
+```bash
 
 web-server-automation/
 │
@@ -39,7 +40,7 @@ web-server-automation/
 │
 ├─ logs/                      # Script output logs
 └─ README.md                  # This file
-
+```
 ---
 
 ## Prerequisites
@@ -52,13 +53,13 @@ web-server-automation/
 ---
 
 ## Configuration File Example
-
+```bash
 `configs/sites.conf`
 example.com,/var/www/example myapp.local,/var/www/myapp
 
 - Format: `domain,webroot`
 - Supports multiple entries
-
+```
 ---
 
 ## Usage
@@ -89,7 +90,7 @@ The default web server is NGINX.
 To switch to Apache (httpd):
 Edit scripts/install_web_server.sh and set WEB_SERVER="httpd".
 Update WEB_USER="apache" in deploy_site.sh.
-
+```
 
 Author
 Ajima Fabian – Linux System Administrator / DevOps Enthusiast
